@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form id="meuform" action="" method="">
+        <p>Dados pessoais</p>
+    
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="adress">Endereço:</label>
+            <input type="text" id="adress" name="adress"required>
+        </div>
+
+        <div class="form-group"></div>
+            <label for="city">Cidade:</label>
+            <input type="text" id="city" name="city"required>
+        </div>
+
+        <div class="form-group">
+            <label for="states">Estados:</label>
+            <select name="estados" id="estados">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
+              
+        </div>
+
+    </form>
+
+    <form id="meuform" method="">
+        <p>Dados profissionais</p>
+        <div class="form-group"></div>
+            <label for="cargo">Natureza do cargo</label>
+            <input type="radio" name="cargo" value="Gerência" >Gerencia 
+            <input type="radio" name="cargo" value="Financeiro" >Financeiro 
+            <input type="radio" name="cargo" value="Recepcao" >Recepção
+            <input type="radio" name="cargo" value="Administrativo" >Administrativo 
+            <input type="radio" name="cargo" value="Juridico" >Jurídico             
+        </div>
+
+        <div class="form-group">
+            <label for="cargo">Área de interesse</label>
+            <input type="checkbox" name="area" value="Computacao">Computação
+            <input type="checkbox" name="area" value="Biologia">Biologia
+            <input type="checkbox" name="area" value="MeioAmbiente">Meio Ambiente
+            <input type="checkbox" name="area" value="Engenharia">Engenharia
+            <input type="checkbox" name="area" value="Historia">História
+        </div>
+
+        <div class="form-group">
+            <label for="mensagem">Mini curriculo:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Enviar" onclick="limpa()">
+            <input type="submit" value="Limpar">
+        </div>
+    </form>
+
+    <script>
+        function limpa() {
+            document.getElementById("meuform").reset(); // Reseta todos os campos do formulário
+        }
+
+
+        
+    </script>
+
+</body>
+</html>
